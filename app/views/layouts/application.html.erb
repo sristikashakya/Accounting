@@ -3,12 +3,23 @@
   <head>
     <title>Accounting</title>
     <%= csrf_meta_tags %>
-
+	<link href="https://fonts.googleapis.com/css?family=Cinzel|Pacifico" rel="stylesheet">
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
-    <%= yield %>
+	<div id="wrap">
+	 	<%= render 'shared/nav' %>
+	<div class = "container">
+    <div class = "row">
+      <div class = "col-xs-12 col-md-6 col-md-offset-3">
+        <%= render 'shared/flash_message' %>
+        <%= yield %>
+      </div>
+    </div>
+  </div>
+ 	</div>
+ 	<%= render 'shared/footer' %>
   </body>
 </html>

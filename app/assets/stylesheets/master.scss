@@ -1,0 +1,62 @@
+$main-blue: #337ab7;
+$footer_height: 45px;
+$primary-font: 'Cinzel', sans-serif;  
+$secondary-font: 'Pacifico', sans-serif; 
+.navbar-header {
+  font-family: $primary-font;
+  background-color: rgba(76, 175, 80, 0.3);
+  width: 100%;
+}
+html,body{
+	font-family: $secondary-font;
+	height: 100%;
+}
+.navbar-header .navbar-brand {
+  font-weight: 100; 
+  font-size: 20px;
+  letter-spacing: 3px;
+  color: $main-blue;
+}
+#wrap {
+  min-height: 100%;
+  height: auto;
+  /* Negative indent footer by its height */
+  margin: 0 auto -45px;
+  /* Pad bottom by footer height */
+  padding: 0 0 45px;
+}
+
+/* Set the fixed height of the footer here */
+.footer {
+  height: $footer_height;
+  position: fixed;
+  right: 0;bottom:0;left:0;
+  background-color:rgba(76, 175, 80, 0.3);
+}
+@import url(http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900);
+[am-LatoSans] {
+  font-family: 'Lato', sans-serif;
+}
+.navbar .navbar-nav > li > a {
+  color: #d1d1d1;
+  font-weight: 700;
+  text-rendering: optimizeLegibility;
+  text-shadow: 0px -1px black, 0px 1px rgba(255, 255, 255, 0.25);
+  line-height: 18px;
+}
+
+.navbar .navbar-nav > li.active {
+  color: #f8f8f8;
+  background-color: #080808;
+  box-shadow: inset 0px -28px 23px -21px rgba(255, 255, 255, 0.15);
+  border-left: 1px solid #2A2A2A;
+  border-right: 1px solid #272727;
+}
+.wrapper{
+	margin-top: 60px;
+}
+.configure
+{
+  margin-top:7px; 
+  font-size: 10px;
+}

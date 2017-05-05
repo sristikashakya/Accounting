@@ -1,0 +1,8 @@
+<h1>Revise Account</h1>
+
+<%= simple_form_for @accounts, method: :patch do |f| %>
+<%= f.input :date %>
+  <%= f.input :title %>
+  <%= f.input :amount %>
+  <%= f.submit 'Submit', class: 'btn btn-primary' %>
+<% end %>

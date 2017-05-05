@@ -1,0 +1,14 @@
+<div class="wrapper">
+  <div class="panel panel-default">
+    <div class="panel-heading">
+        <%= simple_form_for Account.new do |f| %>
+          <%= f.input :date %>
+          <%= f.input :title %>
+          <%= f.input :amount %>
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          <%= f.submit 'Submit', class: 'btn btn-primary' %>
+        <% end %>
+    </div>
+  </div>
+</div>
+    
